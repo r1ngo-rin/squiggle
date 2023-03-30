@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>blue squiggle </title>
+      <!-- Load the Processing.js library -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
+   </head>
+   <body>
+      <script type="application/processing"> void setup() {
+    size(500, 400);
+    background(10, 80, 100);
+    }
 
+void draw() {
+  stroke(255, 0 + 0.8*mouseY, 255);
+  fill(2, 0 + 0.8*mouseX, 255);
+  ellipse(mouseX, mouseY, 70 + .3*mouseX, 70 + 0.3*mouseY);
+ 
+}
+		</script>
+      <canvas></canvas>
+   </body>
+</html>
